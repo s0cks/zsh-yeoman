@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 PLUGIN_DIR="${0:a:h}"
 
-alias h="yo --help"
-alias v="yo --version"
+local yprefix
+zstyle -s ':zim:yo' aliases-prefix 'yprefix' || yprefix=Y
+
+alias ${yprefix}='yo'
+alias ${yprefix}h='yo --help'
+alias ${yprefix}v='yo --version'
