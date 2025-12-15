@@ -9,7 +9,7 @@
   <summary>zimfw</summary>
 
   ```sh
-  zmodule $ZMODULES_DIR/zsh-yeoman/ --if '[[ \$+commands[yo] ]]'
+  zmodule $ZMODULES_DIR/zsh-yeoman/ # --if '[[ \$+commands[yo] ]]'
   ```
 </details>
 
